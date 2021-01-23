@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>signup-new</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="grid.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="headerRd">
+		<div class="logoRd">
+			<a href="#"><img src="images/logoRD.svg"></a>
+		</div>
+	</div>
+	<div class="container-rd" style="max-width: 960px">
+		<div class="row-rd">
+			<div class="col-md-8 content-creator-title mt-4">
+				<a href="#" class="backpage d-flex align-items-center"><i class="fa fa-angle-left mr-2" aria-hidden="true"></i> Back</a>
+			</div>
+			<div class="col-md-12 content-creator-detail">
+				<div class="creator-list creator-list-tr ">
+					<div class="d-flex align-items-center f-college">
+						<span class="im-detail im-detail-white p-0">
+							<img src="images/1H_7AxP0@2x.png" width="50">
+						</span>
+						<div class="ml-3">
+							<p class="my-0"><strong>Johnathon Doe</strong></p>
+							<p class="my-0 sm-text">Member since 12/20/20</p>
+							<p class="my-0 sm-text"><a href="#" class="green-text">View Plexuss Profile</a></p>
+						</div>
+					</div>
+					<div class="subm-rd">
+						<span><img src="images/submit-icon.svg"> 12</span>
+						<p class="m-0">Submissions</p>
+					</div>
+					<div class="subm-rd">
+						<span><img src="images/Published.svg"> 12</span>
+						<p class="m-0">Published</p>
+					</div>
+					<div class="text-center">
+					</div>
+				</div>
+				<div class="submissionstab">
+					<ul>
+						<li><a href="#">All Submissions</a></li>
+						<li class="active"><span class="number">3</span><a href="#">New</a></li>
+						<li><a href="#">Published</a></li>
+						<li><a href="#">Need Feedback</a></li>
+						<li><a href="#">Rejected</a></li>
+						<li>
+							<a href="#" class="sortclick">sort by <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<div class="sortdropdown d-none">
+								<a href="#">Title</a>
+								<a href="#">Author</a>
+								<a href="#">Date Added</a>
+							</div>
+						</li>
+					</ul>
+					<div class="pj-detail pj-detail-white row-rd mt-0 m-0 mb-3 py-3">
+						<span class="col-md-2">
+							<span class="im-detail">
+								<img src="images/ime.png" width="40">
+							</span>
+						</span>
+						<span class="col-md-4">
+							<p class="mb-0"><strong>How to get into your favorite colleges</strong></p>
+						</span>
+						<span class="col-md-3 text-center">
+							<div class="d-inline-block text-left">
+								<p class="m-0">12/28/2020</p>
+								<p class="m-0">12:39pm</p>
+							</div>
+						</span>
+						<span class="col-md-3 text-center">
+							<a href="#" class="viewbtn"><i class="fa fa-angle-down mr-2" aria-hidden="true"></i> Review</a>
+						</span>
+					</div>
+					<div class="pj-detail pj-detail-white row-rd mt-0 m-0 mb-3 py-3">
+						<span class="col-md-2">
+							<span class="im-detail im-detail-white">
+								<img src="images/ime-bk.png" width="40">
+							</span>
+						</span>
+						<span class="col-md-4">
+							<p class="mb-0"><strong>Choosing a College—What Role Should a College Meal Plan Play in Your Search?</strong></p>
+						</span>
+						<span class="col-md-3 text-center">
+							<div class="d-inline-block text-left">
+								<p class="m-0">12/28/2020</p>
+								<p class="m-0">12:39pm</p>
+							</div>
+						</span>
+						<span class="col-md-3 text-center">
+							<a href="#" class="viewbtn"><i class="fa fa-angle-down mr-2" aria-hidden="true"></i> Review</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+	<script>
+	 $(document).ready(function(){
+	     var hasClass = false;
+	    $(".sortclick").click(function(){
+	      if (hasClass == false){
+	        hasClass = true;
+	        $(".sortdropdown").removeClass("d-none");
+	      }
+	      else{
+	        hasClass = false;
+	        $(".sortdropdown").addClass("d-none");
+	      }
+	    });
+	 });
+	 </script>
+</html>

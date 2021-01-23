@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>signup-new</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="grid.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="headerRd">
+		<div class="logoRd">
+			<a href="#"><img src="images/logoRD.svg"></a>
+		</div>
+	</div>
+	<div class="container-rd" style="max-width: 960px">
+		<div class="row-rd">
+			<div class="col-md-12 content-creator-title mt-0">
+				<div class="heading-ine d-flex flex-wrap align-items-start justify-content-between mt-4 mb-3">
+					<div class="p-0 col-md-7">
+						<h3><span>Dashboard</span> > <span>Plexuss Content Review</span></h3>
+						<p class="gray-text">We are always looking for article / content writers. Please see the list of available articles below that have been submitted.</p>
+					</div>
+					<a href="#" class="editor-link d-inline-flex align-items-center"><i class="fa fa-list mr-2" aria-hidden="true"></i> Listing view</a>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="submissionstab w-100">
+					<ul class="mt-1">
+						<li><a href="#">All Submissions</a></li>
+						<li><span class="number">3</span><a href="#">New</a></li>
+						<li><a href="#">Published</a></li>
+						<li class="active"><a href="#">Need Feedback</a></li>
+						<li><a href="#">Rejected</a></li>
+						<li>
+							<a href="#" class="sortclick">sort by <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<div class="sortdropdown d-none">
+								<a href="#">Title</a>
+								<a href="#">Author</a>
+								<a href="#">Date Added</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="dash-list">
+					<div class="row-rd dash-list-head p-3 m-0"> <!-- add class "disable-rd" -->
+						<div class="col-md-4">TITLE OR SUBJECT</div>
+						<div class="col-md-4 text-center">AUTHOR</div>
+						<div class="col-md-2 text-center">DATE ADDED</div>
+						<div class="col-md-2 text-center">STATS</div>
+					</div>
+					<div class="">
+						<div class="row-rd p-3 align-items-center dash-list-content dash-list-content-none border-0 m-0">
+							<div class="col-md-4">
+								<p class="my-2">How to get into your favorite colleges</p>
+							</div>
+							<div class="col-md-4 text-center">
+								<div class="d-inline-flex align-items-center justify-content-start text-left f-college f-college-1">
+									<span class="im-detail im-detail-white p-0">
+										<img src="images/1H_7AxP0@2x.png" width="50">
+									</span>
+									<div class="ml-3">
+										<p class="my-0"><strong class="green-text">Johnathon Doe</strong></p>
+										<p class="my-0 sm-text"><strong>1,203 words</strong></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2 text-center">
+								<p class="my-2">12/28/2020<br>12:39pm</p>
+							</div>
+							
+							<div class="col-md-2 text-center">
+								<a href="#" class="viewbtn p-2 sm-btn-v feedback-color"><i class="fa fa-angle-down mr-1" aria-hidden="true"></i> Need Feedback</a>
+							</div>
+						</div>
+						<div class="feedbackBlk">
+							<span class="m-3"><strong>Feedback:</strong></span>
+							<div>
+								<div class="feedbackBlk-inner">
+									<span class="im-detail im-detail-white p-0">
+										<img src="images/1H_7AxP0@2x.png" width="50">
+									</span>
+									<p class="m-0">Can we use a different image, maybe something that is higher quality? Also a few grammatical errors on the 3rd paragraph second sentence.</p>
+								</div>
+								<div class="feedbackBlk-inner-bottom">
+									<div>
+										<span class="mx-2">@garyoak</span>
+										<span class="mx-2">12/13/2020 - 1:30pm</span>
+									</div>
+									<a href="#">Add feedback</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+	<script>
+	 $(document).ready(function(){
+	     var hasClass = false;
+	    $(".sortclick").click(function(){
+	      if (hasClass == false){
+	        hasClass = true;
+	        $(".sortdropdown").removeClass("d-none");
+	      }
+	      else{
+	        hasClass = false;
+	        $(".sortdropdown").addClass("d-none");
+	      }
+	    });
+	 });
+	 </script>
+</html>
